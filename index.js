@@ -26,6 +26,7 @@ app.post('/interactions', async function (req, res) {
   const { type, id, data } = req.body;
 
   console.log(type, id, data)
+  res.send("works")
 });
 
 app.listen(PORT, () => {
